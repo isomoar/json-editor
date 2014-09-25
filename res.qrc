@@ -1,0 +1,9 @@
+<RCC>
+    <qresource prefix="/">
+        <file>webSources/index_new.html</file>
+        <file>style.qss</file>
+        <file>nextBtn.png</file>
+        <file>prevBtn.png</file>
+        <file>closeBtn.png</file>
+    </qresource>
+</RCC>
