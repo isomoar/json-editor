@@ -312,28 +312,6 @@ void TextEdit::clearCurrentObjectName()
 
 void TextEdit::contextMenuEvent(QContextMenuEvent * event)
 {
-    QMenu *menu = new QMenu(this);
-    QAction* copyAct = new QAction(tr("Копировать"), this);
-    copyAct->setShortcut(QKeySequence::Copy);
-    connect(copyAct, SIGNAL(triggered()), this, SLOT(copy()));
-
-    QAction* pasteAct = new QAction(tr("Вставить"), this);
-    pasteAct->setShortcut(QKeySequence::Paste);
-    connect(pasteAct , SIGNAL(triggered()), this, SLOT(paste()));
-
-    QAction* cutAct = new QAction(tr("Вырезать"), this);
-    cutAct->setShortcut(QKeySequence::Cut);
-    connect(cutAct, SIGNAL(triggered()), this, SLOT(cut()));
-
-    QAction* selectAllAct = new QAction(tr("Выделить все"), this);
-    selectAllAct->setShortcut(QKeySequence::SelectAll);
-    connect(selectAllAct, SIGNAL(triggered()), this, SLOT(selectAll()));
-
-     menu->addAction(copyAct);
-     menu->addAction(pasteAct);
-     menu->addAction(cutAct);
-     menu->addAction(selectAllAct);
-     menu->exec(event->globalPos());
 }
 
 void TextEdit::setNeedToCheckSyntax(bool val)
