@@ -1,4 +1,4 @@
-SchemaBasedJSONEditor
+SchemaBasedJSONEditor (v. 0.1)
 =====================
 
 Schema-based JSON editor
